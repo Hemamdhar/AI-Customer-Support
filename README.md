@@ -23,6 +23,22 @@ Traditional customer support bots often suffer from hallucinations, unbounded ac
 
 ---
 
+## 📸 Live Proof of System Operation
+
+Below is an unedited live screenshot demonstrating the end-to-end system processing an incoming customer inquiry in Gmail:
+
+<div align="center">
+  <img src="docs/images/email-reply-demo.png" alt="Live AI Email Reply Proof" width="100%">
+</div>
+
+### Key Observations from the Live Test:
+- **⏱️ Instant Turnaround (< 60s):** Customer inquiry arrived at `4:53 PM`; the autonomous agent parsed the message, executed database tool calls, and dispatched the live reply at `4:54 PM`.
+- **🏷️ Automated Label Management:** The thread was immediately labeled with **`ai-processed`** via the Gmail API to ensure exactly-once processing and state idempotency.
+- **🧠 Factual Grounding (RAG):** For the customer's stated weight (**90 kg**), the agent queried the PostgreSQL knowledge base, determined that the 10'6" board only supports up to 85 kg, and correctly recommended the **11' All-round board** (designed for riders up to 110 kg) alongside the **12'6" Touring model**.
+- **🛡️ Brand & Voice Adherence:** Greeted the customer by their first name (`Hi Hemamdhar`), adopted a calm, helpful tone, and strictly avoided mentioning AI, models, or internal system details.
+
+---
+
 ## 🏗️ System Architecture
 
 ```mermaid
