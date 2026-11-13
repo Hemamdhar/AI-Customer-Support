@@ -323,7 +323,6 @@ Evaluating run_pipeline ━━━━━━━━━━━━━━━━━━�
 
 ## 🎓 Academic / Project Attribution
 - Developed as a **Final Year Project in Artificial Intelligence & Software Engineering**.
-- Course reference: *AI Engineering Full Course - Build and Deploy a Real AI App* (Data Lumina).
 - Customized and adapted for Google Gemini 3.x models, custom branding, and hardened evaluation benchmarks.
 
 ---
